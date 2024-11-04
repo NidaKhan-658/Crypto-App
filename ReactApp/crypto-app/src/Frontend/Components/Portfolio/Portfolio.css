@@ -1,0 +1,72 @@
+/* Portfolio.css */
+
+.portfolio {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.portfolio-header {
+    margin-bottom: 20px;
+}
+
+.portfolio-header h1 {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+.portfolio-header h2 {
+    font-size: 1.5rem;
+    color: #4caf50; /* Green for total value */
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #003366;
+    color: #f5f5dc;
+}
+
+tr:hover {
+    background-color: #f5f5dc;
+}
+
+.remove-button {
+    padding: 6px 12px;
+    background-color: #f44336; /* Red for remove button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .portfolio-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-header h2 {
+        font-size: 1.2rem;
+    }
+
+    th, td {
+        font-size: 0.85rem;
+    }
+}

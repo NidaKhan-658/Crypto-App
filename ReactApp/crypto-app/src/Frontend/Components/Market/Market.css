@@ -1,0 +1,179 @@
+/* MarketOverview.css */
+
+.market-overview {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.market-header {
+    margin-bottom: 20px;
+}
+
+.market-header h1 {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+.market-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-item {
+    flex: 1 1 calc(20% - 20px); /* Responsive items */
+    padding: 15px;
+    border: 1px solid #8FBC8F;
+    border-radius: 8px;
+    background-color: #f5f5dc; /* Beige background */
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.top-cryptos {
+    margin-top: 30px;
+}
+
+.top-cryptos h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #003366;
+    color: #f5f5dc;
+}
+
+tr:hover {
+    background-color: #f5f5dc;
+}
+
+.positive {
+    color: #4caf50; /* Green for positive change */
+}
+
+.negative {
+    color: #f44336; /* Red for negative change */
+}
+/* Overlay to cover the screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  /* Modal header */
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Quantity input styling */
+  .quantity-input {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quantity-input label {
+    margin-right: 10px;
+  }
+  
+  /* Modal actions */
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .confirm-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirm-button:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+/* Responsive styles */
+@media (max-width: 768px) {
+    .market-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .stat-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on small screens */
+    }
+
+    th, td {
+        font-size: 0.85rem;
+    }
+}

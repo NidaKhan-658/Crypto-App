@@ -1,0 +1,160 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    color: #1B1F2F; /* Dark blue text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #1B1F2F; /* Dark blue navbar */
+    color: #f5f5dc;
+}
+
+.navbar-brand, .nav-link {
+    color: #f5f5dc; /* Beige text color for navbar items */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #8FBC8F; /* Olive green on hover */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #003366; /* Dark blue */
+    color: #f5f5dc; /* Beige text color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s;
+    z-index: 1000; /* Ensures sidebar stays on top */
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin: 20px 0;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    color: #f5f5dc;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav a i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar-nav a:hover, .active-link {
+    background-color: #8FBC8F; /* Olive green background */
+    color: #003366; /* Dark blue text */
+    border-radius: 5px;
+}
+
+.sidebar-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-top: 1px solid #8FBC8F;
+}
+
+/* Main Content Styles */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content-container {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Aligns with sidebar width */
+}
+
+/* Button Styles */
+.btn-outline-danger {
+    border-color: #8FBC8F; /* Olive green border */
+}
+
+.btn-outline-danger:hover {
+    background-color: #8FBC8F; /* Olive green background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.btn-outline-success {
+    border-color: #003366; /* Dark blue border */
+}
+
+.btn-outline-success:hover {
+    background-color: #003366; /* Dark blue background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* Dark blue footer */
+    color: #f5f5dc; /* Beige text color */
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Hide the sidebar */
+    .sidebar {
+        position: absolute;
+        width: 100%; /* Full width on small screens */
+        height: auto;
+        top: 56px; /* Position below navbar */
+        display: none; /* Hidden by default on small screens */
+    }
+
+    .sidebar.show {
+        display: block; /* Show when toggled */
+    }
+
+    .content-container {
+        margin-left: 0;
+        padding-top: 20px; /* Space for navbar */
+    }
+    
+    /* Center-align sidebar content when collapsed */
+    .sidebar h2, .sidebar-nav a span {
+        display: none;
+    }
+
+    .sidebar-nav a {
+        justify-content: center;
+        padding: 15px 0;
+    }
+}

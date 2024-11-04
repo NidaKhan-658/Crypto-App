@@ -1,0 +1,91 @@
+/* DEXPage.css */
+
+.dex-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.dex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dex-header h1 {
+    font-size: 2rem;
+    color: #003366;
+    font-weight: 600;
+}
+
+.dex-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: 1px solid #8FBC8F;
+    background-color: #003366;
+    color: #f5f5dc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #8FBC8F;
+    color: #003366;
+}
+
+.dex-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #003366;
+    color: #f5f5dc;
+}
+
+tr:hover {
+    background-color: #f5f5dc;
+}
+
+.positive {
+    color: #4caf50; /* Green for positive change */
+}
+
+.negative {
+    color: #f44336; /* Red for negative change */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dex-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .filter-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        font-size: 0.85rem;
+    }
+}

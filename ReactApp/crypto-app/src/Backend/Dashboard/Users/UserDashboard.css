@@ -1,0 +1,93 @@
+/* UserDashboard.css */
+
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .login-container {
+    text-align: center;
+    height: 400px;
+
+  }
+  
+  .login-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .user-dashboard h2 {
+    color: #007bff;
+  }
+  
+  .table-responsive {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .pagination span {
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  .dashboard-controls input,
+  .dashboard-controls select {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Modal Backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+/* Modal Heading */
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Modal Buttons */
+.modal-content .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-content .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.modal-content .btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+}
+
+  

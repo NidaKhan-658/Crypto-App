@@ -1,0 +1,80 @@
+/* index.css */
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Montserrat', 'Poppins', sans-serif; /* Ensure consistent font across the application */
+  background-color: #212529; /* Beige background */
+  color: #1B1F2F; /* Dark blue text color */
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Link Styles */
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: #003366; /* Dark blue color for links */
+}
+
+a:hover {
+  color: #8FBC8F; /* Olive green color on hover */
+}
+
+
+
+/* Button Styles */
+button {
+  cursor: pointer; /* Change cursor to pointer for buttons */
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center; /* Utility class for centering text */
+}
+
+.mt-1 {
+  margin-top: 1rem; /* Utility class for top margin */
+}
+
+.mb-1 {
+  margin-bottom: 1rem; /* Utility class for bottom margin */
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+h1 {
+  font-size: 2.5rem; /* Larger font size for main heading */
+}
+
+h2 {
+  font-size: 2rem; /* Slightly smaller for subheadings */
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Adjust subheading size for smaller screens */
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366; /* Dark blue footer */
+  color: #f5f5dc; /* Beige text color */
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,234 @@
+{
+  "login": [
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "ac6b"
+    }
+  ],
+  "users": [
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "ac6b"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "d6db"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "3f49"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "929e"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "5a81"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "bfcc"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "e184"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "9ffc"
+    },
+    {
+      "name": "Updated User",
+      "status": "logged_in",
+      "id": "6372"
+    },
+    {
+      "id": "2c84",
+      "username": "doctor",
+      "email": "nida@gfg.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "country": "qwer",
+      "phone": "123456",
+      "name": "Test",
+      "status": "updated"
+    },
+    {
+      "id": "75b4",
+      "username": "patient",
+      "email": "test@gmail.com",
+      "password": "qwerty",
+      "confirmPassword": "qwerty",
+      "country": "qwer",
+      "phone": "789526",
+      "name": "vhvhh",
+      "status": "updated"
+    },
+    {
+      "id": "9614",
+      "username": "admin",
+      "email": "nida@gfg.com",
+      "password": "Text",
+      "confirmPassword": "Text",
+      "country": "fgfhy",
+      "phone": "123456",
+      "name": "testufy",
+      "status": "updated"
+    },
+    {
+      "id": "6f8d",
+      "name": "New User",
+      "status": "registered"
+    },
+    {
+      "id": "beaf",
+      "name": "New User",
+      "status": "registered"
+    },
+    {
+      "id": "f6d8",
+      "name": "New User",
+      "status": "registered"
+    },
+    {
+      "id": "7182",
+      "name": "New User",
+      "status": "registered"
+    },
+    {
+      "id": "9130",
+      "name": "New User",
+      "status": "registered"
+    },
+    {
+      "id": "81a1",
+      "username": "Nida",
+      "email": "nida@gfg.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "country": "India",
+      "phone": "123456",
+      "status": ""
+    },
+    {
+      "id": "3bfd",
+      "username": "Fahim",
+      "email": "h@f.in",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "country": "Egypt",
+      "phone": "98543667",
+      "status": "registered"
+    },
+    {
+      "id": "90d8",
+      "username": "Piku",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "country": "fgfhy",
+      "phone": "123456",
+      "status": "updated",
+      "name": "Tp"
+    }
+  ],
+  "register": [
+    {
+      "username": "johndoe",
+      "password": "hashed_password_here",
+      "email": "johndoe@example.com",
+      "registrationDate": "2023-10-10T14:30:00Z",
+      "isActive": true,
+      "id": "1445"
+    },
+    {
+      "id": "b5dc",
+      "username": "Test",
+      "email": "test@ymail.com",
+      "password": "123456"
+    },
+    {
+      "id": "966a",
+      "username": "Test",
+      "email": "test@ymail.com",
+      "password": "123456"
+    },
+    {
+      "id": "6a26",
+      "username": "Test",
+      "email": "test@ymail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "00d9",
+      "username": "nida ",
+      "email": "nida@test.com",
+      "password": "nida123"
+    },
+    {
+      "id": "15d1",
+      "username": "nida ",
+      "email": "nida@test.com",
+      "password": "nida123"
+    }
+  ],
+  "transaction": [
+    {
+      "transactionId": "1234567890",
+      "amount": 100,
+      "currency": "USD",
+      "transactionDate": "2023-10-10T14:30:00Z",
+      "status": "success",
+      "id": "fb24"
+    },
+    {
+      "id": "ea8b",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "quantity": "2",
+      "price": 67564.7
+    },
+    {
+      "id": "9f7e",
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "quantity": -1,
+      "price": 67564.7
+    },
+    {
+      "id": "5e59",
+      "name": "Solana",
+      "symbol": "SOL",
+      "quantity": "4",
+      "price": 159.55
+    },
+    {
+      "id": "17c7",
+      "name": "Solana",
+      "symbol": "SOL",
+      "quantity": -3,
+      "price": 159.55
+    }
+  ],
+  "portfolio": [
+    {
+      "portfolioId": "1234567890",
+      "symbol": "AAPL",
+      "quantity": 10,
+      "buyDate": "2023-10-10T14:30:00Z",
+      "sellDate": "2023-10-10T14:30:00Z",
+      "status": "active",
+      "id": "f528"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+/* General Styling */
+.home {
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #1b1f2f;
+}
+
+/* Hero Section Styling */
+.home-header {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #120f4546, #6666ad7f),url(https://img3.wallspic.com/crops/2/4/9/3/6/163942/163942-bitcoin-cryptocurrency-iota-ethereum-cryptocurrency_exchange-1920x1080.jpg);
+  color: #19a914;
+  height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-out;
+}
+
+.home-header h1 {
+  background-color: #33346B;
+  border: 1px solid  #33346B;
+  border-radius: 20px;
+  font-size: 3.5rem;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.get-started {
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.get-started:hover {
+  background-color: #ff5a45;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  animation: fadeIn 1.5s ease;
+}
+
+.feature-item {
+  background-color: #242846;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  color: #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.4);
+}
+
+.feature-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(108, 99, 255, 0.2);
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: -1;
+}
+
+.feature-item:hover::after {
+  opacity: 1;
+}
+
+/* News Section */
+.news {
+  background-color: #2d314a;
+  border-radius: 12px;
+  padding: 20px;
+  color: #ddd;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.8s ease;
+}
+
+.news h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news li {
+  font-size: 1.1rem;
+  padding: 8px 0;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
